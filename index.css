@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=DM+Serif+Display&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: hsl(0deg 0% 98%);
+    display: flex;
+    min-height: 700px;
+}
+
+/* navbar */
+#modal-btn{
+    display: none;
+border: none;
+background: transparent;
+}
+.bar{
+    height: 4px;
+    margin: 4px;
+    width: 2rem;
+    background-color: tomato;
+}
+.bar:nth-child(2){
+    width: 3rem;
+}
+#cart{
+    display: none;
+    border: none;
+ background: transparent;
+
+}
+#cart img{
+    width: 6rem;
+}
+nav > * {
+    margin: 0 2rem;
+}
+nav{
+    display: inline-block;
+    flex: 1 1 15%;
+    margin:1rem;    
+}
+nav h3{
+    margin: 2rem 2rem;
+    font-family: 'DM Serif Display';
+    font-size: 2.5rem;
+}
+ul{
+    margin: 2rem 2rem;
+}
+ul li{
+    margin: 2.5rem 0;
+    list-style: none;
+    
+}
+ul li a{
+    color: #7f7f7f;
+    font-family: 'Baloo 2', cursive; 
+    text-decoration: none;
+    transition: text-decoration;
+    transition-duration: 0.2s;
+}
+ul li a:hover{
+    text-decoration: line-through #ef6060;
+}
+#btn{
+    background-color: #ff4e4e;
+    border: transparent;
+    width: 50%;
+    height: 2.6rem;
+    border-radius: 25px;
+    color: whitesmoke;
+    cursor:pointer;
+    transition:all;
+    transition-duration: 0.5s;
+}
+#btn:hover{
+    transform: scale(1.1);
+}
+#btn:active{
+    transform: scale(0.5);
+}
+/* Content */   
+#content{
+    display: flex;
+    margin:1rem;
+    flex: 1 1 80%;
+    flex-wrap: wrap;
+}
+header{
+    
+    flex: 1 1 50%;
+}
+header h1{
+    font-family: 'DM Serif Display', serif;
+    font-size: 4.2rem;
+    margin-top: 6.5rem;
+    margin-left: 4.5rem;
+}
+#tag{
+    color: #7f7f7f;
+    font-family: 'Baloo 2', cursive;
+    flex: 1 1 16%;
+    padding: 4rem 6.5rem;
+    margin: 4.5rem 6.3rem 0rem 6.3rem;
+}
+#tag::after{
+    content: "";
+    display: block;
+    position: relative;
+    top: 1rem;
+    width: 4rem;
+    height: 3px;
+    background-color: rgb(239, 96, 96);
+}
+/* cards inside content */
+#card ul{
+    display: flex;
+    flex: 1 1 100%;
+    margin: 0 5rem;
+}
+
+.box{
+    margin: 0 1rem;
+    width: 8.5rem;
+    height: 10.5rem;
+    padding: 1rem;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 15%;
+    border: transparent;
+    box-shadow: 1.1rem 1.1rem 3rem 0.6rem rgb(191 176 191 / 65%);
+}
+.boximg{
+    margin: auto;
+    width: 7rem;
+    height: 7rem;
+    display: block;
+    border-radius: 100%;
+    overflow: hidden;
+    /* text-indent: -14rem; */
+}
+.boximg img{
+    width: 7rem;
+    height: 7rem;
+    transform-origin: 4rem;
+    transform: scale(1.2);
+}
+.box h4{
+    margin-top: 1.5rem;
+    font-family: sans-serif;
+}
+@media screen and (max-width:1496px) {
+#tag{
+    margin: 4.5rem 5.3rem 0rem 0.3rem;
+}
+
+}
+/* mobile */
+@media screen and (max-width:700px) {
+    *{
+        font-size: 12px;
+    }
+    body{
+        flex-direction: column;
+    }
+    /* navbar */
+    :is(#cart, #modal-btn){
+        display: inline;
+    }
+    #tag{
+        order: 7;
+        padding: 2rem;
+        margin:0 2rem;
+    }
+   :is(nav ul , #btn,#nav-head span){
+       display: none;
+   }
+#header{
+    margin:0 2rem;
+    
+   }
+   header h1{
+    margin: 0 2rem;
+    font-size: 2.2rem;
+   }
+   #card{
+       margin: 0 2rem ;
+   }
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* cards  */
+#card ul{
+    flex-wrap: wrap;
+    margin: 0;
+
+}
+#card ul li {
+    flex-basis: 1 1 50%;
+}
+#box5{
+    display: none;
+}
+}
+@media screen and (max-width:400px) {
+    .box{
+       margin: 0 0.6rem;
+    }
+    
+}
