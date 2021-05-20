@@ -22,11 +22,29 @@ background: transparent;
     position: fixed;
     z-index: 1;
     width:100%;
-    height:100%;
+    height:60%;
     background: white;
     overflow: auto;
-    border: 2px solid blue;
-
+    opacity: 0;
+    transition: all;
+    transition-duration: 2s;
+}
+.btn1{
+    background-color: #ff4e4e;
+    border: transparent;
+    width: 50%;
+    height: 2.6rem;
+    border-radius: 25px;
+    color: whitesmoke;
+    cursor:pointer;
+    transition:all;
+    transition-duration: 0.5s;
+}
+.btn1:hover{
+    transform: scale(1.1);
+}
+.btn1:active{
+    transform: scale(0.5);
 }
 .bar{
     height: 4px;
