@@ -15,6 +15,19 @@ body{
 border: none;
 background: transparent;
 }
+/* modal */
+#modal{
+    display: none;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    width:100%;
+    height:100%;
+    background: white;
+    overflow: auto;
+    border: 2px solid blue;
+
+}
 .bar{
     height: 4px;
     margin: 4px;
@@ -27,7 +40,7 @@ background: transparent;
 #cart{
     display: none;
     border: none;
- background: transparent;
+    background: transparent;
 
 }
 #cart img{
@@ -64,7 +77,7 @@ ul li a{
 ul li a:hover{
     text-decoration: line-through #ef6060;
 }
-#btn{
+.btn{
     background-color: #ff4e4e;
     border: transparent;
     width: 50%;
@@ -75,10 +88,10 @@ ul li a:hover{
     transition:all;
     transition-duration: 0.5s;
 }
-#btn:hover{
+.btn:hover{
     transform: scale(1.1);
 }
-#btn:active{
+.btn:active{
     transform: scale(0.5);
 }
 /* Content */   
@@ -158,7 +171,7 @@ header h1{
 
 }
 /* mobile */
-@media screen and (max-width:700px) {
+@media screen and (max-width:900px) {
     *{
         font-size: 12px;
     }
@@ -166,7 +179,7 @@ header h1{
         flex-direction: column;
     }
     /* navbar */
-    :is(#cart, #modal-btn){
+    :is(#cart , #modal-btn){
         display: inline;
         margin: 0;
     }
@@ -176,7 +189,7 @@ header h1{
         margin:0 2rem;
         font-size: 1.2rem;
     }
-   :is(nav ul , #btn,#nav-head span){
+   :is(nav ul , .btn,#nav-head span){
        display: none;
    }
 #header{
