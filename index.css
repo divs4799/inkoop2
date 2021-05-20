@@ -26,9 +26,8 @@ background: transparent;
     background: white;
     overflow: auto;
     border: 2px solid blue;
+
 }
-#modal-content{
-    display:none;
 .bar{
     height: 4px;
     margin: 4px;
